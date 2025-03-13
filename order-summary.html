@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <style>
+        .order-summary-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        .order-item {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .order-item img {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+        .order-item div {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="order-summary-container" id="order-summary">
+        <h2>Order Summary</h2>
+        <div id="order-items-summary"></div>
+        <h3>Payment Details</h3>
+        <div id="payment-summary"></div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const orderId = localStorage.getItem("orderId"); // Get orderId from localStorage
+            if (!orderId) {
+                alert("No order found.");
+                return;
+            }
+
+            fetchOrderSummary(orderId);
+        });
+
+        function fetchOrderSummary(orderId) {
+            fetch(`http://localhost:3000/order-summary/${orderId}`)
+                .then(response => response.json())
+                .then(order => {
+                    // Display order items
+                    const orderItemsContainer = document.getElementById("order-items-summary");
+                    const paymentSummaryContainer = document.getElementById("payment-summary");
+
+                    if (order.order_items.length === 0) {
+                        orderItemsContainer.innerHTML = "<p>Your order is empty.</p>";
+                    } else {
+                        orderItemsContainer.innerHTML = order.order_items.map(item => `
+                            <div class="order-item">
+                                <img src="${item.image}" alt="${item.productName}">
+                                <div>
+                                    <h3>${item.productName}</h3>
+                                    <p>Price: $${item.price}</p>
+                                    <p>Quantity: ${item.quantity}</p>
+                                    <p>Total: $${(item.price * item.quantity).toFixed(2)}</p>
+                                </div>
+                            </div>
+                        `).join("");
+                    }
+
+                    // Display payment details
+                    paymentSummaryContainer.innerHTML = `
+                        <h3>Payment Method: ${order.payment_details.paymentMethod}</h3>
+                        <p>Details: ${JSON.stringify(order.payment_details.details)}</p>
+                    `;
+                })
+                .catch(error => {
+                    console.error("Error fetching order summary:", error);
+                    alert("Failed to fetch order summary.");
+                });
+        }
+    </script>
+</body>
+</html>

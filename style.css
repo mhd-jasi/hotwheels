@@ -1,0 +1,182 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+/* Header Styles */
+.header {
+  background-color: #2e85ff;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo img {
+  width: 150px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.header .logo h1 {
+  margin: 0;
+  font-size: 1.9rem;
+}
+
+.cart {
+  color: white;
+  font-size: 1rem;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(to bottom, red, rgb(255, 196, 0));
+  color: rgb(0, 0, 0);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0 0;
+}
+
+
+
+/* Product Section */
+.products {
+  padding: 2rem;
+  background: #fff;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin: 1rem 0 0.5rem;
+  color: #000000;
+}
+
+.product-card p {
+  color: #252525;
+  font-size: 1rem;
+}
+
+
+
+
+
+.add-to-cart,
+.buy-now {
+  display: inline-block;
+  background: red;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.add-to-cart:hover,
+.buy-now:hover {
+  background: darkred;
+}
+
+.buy-now {
+  background: orange;
+}
+
+.buy-now:hover {
+  background: darkorange;
+}
+
+/* View Details Button */
+.view-details {
+  display: inline-block;
+  background: #000000;
+  color: #fff2f2;
+  border: 1px solid #ddd;
+  padding: 0.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.7rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.view-details:hover {
+  background-color: #e0e0e0;
+  color: #000;
+  border-color: #ccc;
+}
+
+/* Footer Styles */
+.footer {
+  text-align:center;
+  padding: 2rem;
+  background-color: #333;
+  color: white;
+  font-size: 1.9rem;
+   
+}
+footer nav ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+  display: inline-flex; /* Display links inline */
+  gap: 20px;
+  font-size: 1.3rem;
+ 
+   /* Add space between links */
+}
+
+footer nav ul li a {
+  text-decoration: none; /* Remove underline */
+  color: #fff; /* Link color */
+  font-weight: bold;
+  
+}

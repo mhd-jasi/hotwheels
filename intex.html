@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hot Wheels Collection</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="pngwing.com.png">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <img src="pngwing.com.png" alt="Hot Wheels Logo">
+      <h1>Hot Wheels Collection</h1>
+    </div>
+    
+    <a href="cart.html" target="_blank"><img src="shopping-bag_5994067.png" arc="cart" width="50px" ></img></a>
+    
+    <script>
+      // Simulate adding an item to the cart
+      let cartCounter = 0;
+    
+      function addItemToCart() {
+        cartCounter++;
+        document.getElementById('cart-counter').textContent = cartCounter;
+      }
+    
+      // Simulate adding an item after 2 seconds
+      setTimeout(addItemToCart, 2000);
+    </script>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h2>Discover the Hottest Hot Wheels Collections</h2>
+    <h3>Explore our exclusive range of die-cast cars.</h3>
+  </section>
+
+  <!-- Product Section -->
+  <section id="products" class="products">
+    <h2>Shop Our Collection</h2>
+    <div class="product-grid">
+
+      <!-- Product Card 1 -->
+      <div class="product-card">
+        <img src="hot wheel 1.jpg" alt="Red Racer">
+        <h3>HW 4 Trac </h3>
+        <p>$449.00</p>
+        <label for="quantity1">Quantity:</label>
+        <input type="number" id="quantity1" name="quantity" min="1" value="1">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+        <button class="view-details"
+          data-name="HW 4 Trac"
+          data-description="Brand : Hot Wheels
+          Toy vehicle form : Car
+          Material : Metal
+          Colour : Black
+          Theme : Sport
+          Model Name: Hot Wheels Let's Race Netflix HW 4 Trac HW Race Day
+          Country of Origin : Malaysia 
+          Recommended Age : 3 years and up
+          Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology. and red line tires. Currently the best selling mini car in the world
+          Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+          data-price="449.00"
+          data-image="hot wheel 1.jpg">View Details</button>
+     
+    </div>
+
+      <!-- Product Card 2 -->
+      <div class="product-card">
+        <img src="hot wheel 2.jpg" alt="91 GMC Syclone">
+        <h3> Heavy Hitcher </h3>
+        <p>$349.00</p>
+        <label for="quantity2">Quantity:</label>
+        <input type="number" id="quantity2" name="quantity" min="1" value="1">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+        <button class="view-details" 
+          data-name="Heavy Hitcher"
+          data-description="Brand : Hot Wheels
+          Material : Metal
+          Colour : Green
+          Model Name : Hot Wheels Let's Race Netflix Heavy Hitcher HW Metro
+          Country of Origin : Malaysia 
+          Recommended Age : 3 years and up
+          Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology. and red line tires. Currently the best selling mini car in the world
+          Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+          data-price="349.00"
+          data-image="hot wheel 2.jpg">View Details</button>
+      
+    </div>
+
+      <!-- Product Card 3 -->
+      <div class="product-card">
+        <img src="hot wheel 3.jpg" alt="Orange Streak">
+        <h3>91 GMC Syclone </h3>
+        <p>$349.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+        <button class="view-details" 
+         data-name="91 GMC Syclone"
+         data-description="Brand : Hot Wheels
+         Toy vehicle form : Car
+         Material : Metal
+         Colour : White
+         Model Name : Hot Wheels 91 GMC Syclone HW The 90s
+         Country of Origin : Malaysia 
+         Recommended Age: 3 years and up
+         Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology. and red line tires. Currently the best selling mini car in the world
+         Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+         data-price="349.00"
+         data-image="hot wheel 3.jpg">View Details</button>
+   
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="product-card">
+        <img src="hot wheel 4.jpg" alt="Orange Streak">
+        <h3>Nissan Skyline GT-R </h3>
+        <p>$717.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="Nissan Skyline GT-R"
+       data-description="Brand : Hot Wheels
+       Material : Metal
+       Colour : Grey
+       Theme : Sport
+       Model Name : Hot Wheels Nissan Skyline GT-R BCNR33 HW J Imports
+       Country of Origin : Malaysia 
+       Recommended Age : 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology. and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="717.00"
+       data-image="hot wheel 4.jpg">View Details</button>
+   
+      </div>
+
+      <!-- Product Card 5 -->
+      <div class="product-card">
+        <img src="hot wheel 5.jpg" alt="Orange Streak">
+        <h3>Chevy Silverado </h3>
+        <p>$399.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="Heavy Hitcher"
+       data-description="Brand : Hot Wheels
+       Toy vehicle form : Car
+       Material : Metal
+       Colour : Blue
+       Theme : Sport
+       Model Name : Hot Wheels Chevy Silverado Then And Now
+       Country of Origin : Malaysia 
+       Recommended Age : 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology. and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="399.00"
+       data-image="hot wheel 5.jpg">View Details</button>
+   
+      </div>
+
+      <!-- Product Card 6 -->
+      <div class="product-card">
+        <img src="hot wheel 6.jpg" alt="Orange Streak">
+        <h3>67 Chevy C10</h3>
+        <p>$359.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="67 Chevy C10"
+       data-description="Brand : Hot Wheels
+       Toy vehicle form : Car
+       Material : Metal
+       Colour : Red
+       Theme : Sport
+       Model name  : 67 Chevy C10 HW Art Cars
+       Country of Origin : Malaysia
+       Recommended Age: 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology. and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="359.00"
+       data-image="hot wheel 6.jpg">View Details</button>
+   
+      </div>
+
+      <!-- Product Card 7 -->
+      <div class="product-card">
+        <img src="hot wheel 7.jpg" alt="Orange Streak">
+        <h3>HW450F HW Xtreme </h3>
+        <p>$349.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="Heavy Hitcher"
+       data-description="Brand : Hot Wheels
+       Toy vehicle form : Motorcycle 
+       Material : Metal
+       Colour : Silver
+       Theme : Motorcycle
+       Model Name  : Hot Wheels Let's Race Netflix HW450F HW Xtreme Sports
+       Country of Origin : Malaysia
+       Recommended Age : 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="349.00"
+       data-image="hot wheel 2.jpg">View Details</button>
+   
+      </div>
+
+      <!-- Product Card 8 -->
+      <div class="product-card">
+        <img src="hot wheel 8.jpg" alt="Orange Streak">
+        <h3>Custom 72 Chevy Luv </h3>
+        <p>$329.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="Custom 72 Chevy Luv"
+       data-description="Brand : Hot Wheels
+       Material : Metal
+       Colour : White
+       Theme : Sport
+       Model Name : Custom 72 Chevy Luv HW Hot Trucks
+       Country of Origin : Malaysia
+       Recommended Age: 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="329.00"
+       data-image="hot wheel 8.jpg">View Details</button>
+   
+      </div>
+
+      <!-- Product Card 9 -->
+      <div class="product-card">
+        <img src="hot wheel 9.jpg" alt="Orange Streak">
+        <h3>Celero GT </h3>
+        <p>$379.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="Celero GT"
+       data-description="Brand : Hot Wheels
+       Toy vehicle form : Car
+       Material : Metal
+       Colour : Purple
+       Theme : Animal  
+       Model Name : Celero GT Quarter Mile Heroes
+       Country of Origin : Malaysia
+       Recommended Age: 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="379.00"
+       data-image="hot wheel 9.jpg">View Details</button>
+   
+      </div>
+
+      <!-- Product Card 10 -->
+      <div class="product-card">
+        <img src="hot wheel 10.jpg" alt="Orange Streak">
+        <h3>DMC Delorean </h3>
+        <p>$879.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="DMC Delorean"
+       data-description="Brand : Hot Wheels
+       Material : Metal
+       Colour : Grey
+       Model Name : DMC Delorean HW Rolling Metal
+       Country of Origin: Malaysia
+       Recommended Age: 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="879.00"
+       data-image="hot wheel 10.jpg">View Details</button>
+   
+      </div>
+
+      <!-- Product Card 11 -->
+      <div class="product-card">
+        <img src="hot wheel 11.jpg" alt="Orange Streak">
+        <h3>49 Drag Merc</h3>
+        <p>$599.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="49 Drag Merc"
+       data-description="Brand : Hot Wheels
+       Material : Metal
+       Colour : Silver
+       Model Name : 49 Drag Merc HW Rolling Metal
+       Country of Origin: Malaysia 
+       Recommended Age: 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="599.00"
+       data-image="hot wheel 11.jpg">View Details</button>
+   
+      </div>
+
+      <!-- Product Card 12 -->
+      <div class="product-card">
+        <img src="hot wheel 12.jpg" alt="Orange Streak">
+        <h3>Porsche 904 Carrera GTs</h3>
+        <p>$599.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="Porsche 904 Carrera GTs"
+       data-description="Brand : Hot Wheels
+       Material : Metal
+       Colour : Red
+       Theme : Sport
+       Model Name : Porsche 904 Carrera GTS HW Exotics
+       Country of Origin: Malaysia
+       Recommended Age : 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="599.00"
+       data-image="hot wheel 12.jpg" >View Details</button>
+   
+      </div>
+
+      <!-- Product Card 13 -->
+      <div class="product-card">
+        <img src="hot wheel 13.jpg" alt="Orange Streak">
+        <h3>BMW M3 Wagon</h3>
+        <p>$418.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="BMW M3 Wagon"
+       data-description="Brand : Hot Wheels
+       Toy vehicle form : Car
+       Material : Metal
+       Colour : Red
+       Theme : Sport
+       Model Name  : BMW M3 Wagon HW Modified
+       Country of Origin : Malaysia
+       Recommended Age : 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="418.00"
+       data-image="hot wheel 13.jpg">View Details</button>
+   
+      </div>
+
+      <!-- Product Card 14 -->
+      <div class="product-card">
+        <img src="hot wheel 14.jpg" alt="Orange Streak">
+        <h3>Small BLDC </h3>
+        <p>$379.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="Small BLDC"
+       data-description="Brand : Hot Wheels
+       Toy vehicle form : Car
+       Material : Metal
+       Colour : Wood
+       Theme : Sport
+       Model Name : Let's Race Netflix Small BLDC Tooned
+       Country of Origin : Malaysia
+       Recommended Age: 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="379.00"
+       data-image="hot wheel 14.jpg">View Details</button>
+   
+      </div>
+
+      <!-- Product Card 15 -->
+      <div class="product-card">
+        <img src="hot wheel 15.jpg" alt="Orange Streak">
+        <h3>64 Chevy Chevelle SS </h3>
+        <p>$429.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="64 Chevy Chevelle SS"
+       data-description="Brand : Hot Wheels
+       Toy vehicle form : Car
+       Material : Metal
+       Colour : Yellow
+       Theme : Sport
+       Model Name : 64 Chevy Chevelle SS Muscle Mania
+       Country of Origin: Malaysia
+       Recommended Age : 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="429.00"
+       data-image="hot wheel 15.jpg">View Details</button>
+   
+      </div>
+
+      <!-- Product Card 16 -->
+      <div class="product-card">
+        <img src="hot wheel 16.jpg" alt="Orange Streak">
+        <h3>Mclaren P1 </h3>
+        <p>$1,119.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="Mclaren P1"
+       data-description="Brand : Hot Wheels
+       Toy vehicle form : Car
+       Material : Metal
+       Colour : Red
+       Theme : Sport
+       Model Name : Mclaren P1 Quarter Mile Heroes
+       Country of Origin : Malaysia
+        Recommended Age: 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology. and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="1,119.00"
+       data-image="hot wheel 16.jpg">View Details</button>
+   
+      </div>
+
+      <!-- Product Card 17 -->
+      <div class="product-card">
+        <img src="hot wheel 17.jpg" alt="Orange Streak">
+        <h3>Gordon Murry Automotive</h3>
+        <p>$488.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button> <button class="view-details" 
+       data-name="Gordon Murry Automotive"
+       data-description="Brand : Hot Wheels
+       Toy vehicle form : Car
+       Material : Metal
+       Colour : Red
+       Model Name : Gordon Murry Automotive T 50S HW Exotics
+       Country of Origin: Malaysia
+       Recommended Age: 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations "
+       data-price="488.00"
+       data-image="hot wheel 17.jpg">View Details</button>
+
+      </div>
+
+      <!-- Product Card 18 -->
+      <div class="product-card">
+        <img src="hot wheel 18.jpg" alt="Orange Streak">
+        <h3>Koenigsegg Jesko</h3>
+        <p>$799.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="Koenigsegg Jesko"
+       data-description="Brand : Hot Wheels
+       Toy vehicle form : Car
+       Material : Metal
+       Colour : Orange
+       Theme : Car
+       Model Name : 2020 Koenigsegg Jesko HW Exotics
+       Country of Origin : Malaysia
+       Recommended Age : 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="799.00"
+       data-image="hot wheel 18.jpg">View Details</button>
+   
+      </div>
+
+      <!-- Product Card 19 -->
+      <div class="product-card">
+        <img src="hot wheel 19.jpg" alt="Orange Streak">
+        <h3>Thred Shredder</h3>
+        <p>$329.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="Thred Shredder"
+       data-description="Brand : Hot Wheels
+       Material : Metal
+       Colour : Black
+       Theme : Sport
+       Model Name : Tred Shredder HW Drift
+       Country of Origin : Malaysia
+       Recommended Age : 3 years and up
+       Hot Wheels : Cool bike! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="329.00"
+       data-image="hot wheel 19.jpg">View Details</button>
+   
+      </div>
+
+      <!-- Product Card 20 -->
+      <div class="product-card">
+        <img src="hot wheel 20.jpg" alt="Orange Streak">
+        <h3>17 Ford GT</h3>
+        <p>$648.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="17 Ford GT"
+       data-description="Brand : Hot Wheels
+       Toy vehicle form : Car
+       Material : Metal
+       Colour : White
+       ThemeSport
+       Model Name : 17 Ford GT HW Exotics
+       Country of Origin : Malaysia
+       Recommended Age : 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="648.00"
+       data-image="hot wheel 20.jpg">View Details</button>
+   
+      </div>
+
+       <!-- Product Card 21 -->
+       <div class="product-card">
+        <img src="hot wheel 21.jpg" alt="Orange Streak">
+        <h3>69 Mercury Cougar </h3>
+        <p>$650.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="69 Mercury Cougar"
+       data-description="Brand : Hot Wheels
+       Toy vehicle form : Car
+       Material : Metal
+       Colour : Green
+       Theme : Sport
+       Model Name : 69 Mercury Cougar Eliminator Muscle Mania
+       Country of Origin: Malaysia 
+       Recommended Age : 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="650.00"
+       data-image="hot wheel 21.jpg">View Details</button>
+   
+      </div>
+
+       <!-- Product Card 22 -->
+       <div class="product-card">
+        <img src="hot wheel 22.jpg" alt="Orange Streak">
+        <h3>Dodge Viper SRT10 ACR</h3>
+        <p>494.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="Dodge Viper SRT10 ACR"
+       data-description="Brand : Hot Wheels
+       Toy vehicle form : Car
+       Material : Metal
+       Colour : Grey
+       ThemeSport
+       Model Name : Dodge Viper SRT10 ACR HW Exotics
+       Country of Origin : Malaysia 
+       Recommended Age : 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="494.00"
+       data-image="hot wheel 22.jpg">View Details</button>
+   
+      </div>
+
+       <!-- Product Card 23 -->
+       <div class="product-card">
+        <img src="hot wheel 23.jpg" alt="Orange Streak">
+        <h3>Lamorghini Huracan</h3>
+        <p>$885.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="Lamorghini Huracan"
+       data-description="Brand : Hot Wheels
+       Toy vehicle form : Car
+       Material : Metal
+       Colour : Red
+       Theme : Sport
+       Model Name : Lamorghini Huracan LP 620-2 Super Trofeo
+       Country of Origin : Malaysia
+       Recommended Age : 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="885.00"
+       data-image="hot wheel 23.jpg">View Details</button>
+      </div>
+
+       <!-- Product Card 24 -->
+       <div class="product-card">
+        <img src="hot wheel 24.jpg" alt="Orange Streak">
+        <h3>Ducati Desretx</h3>
+        <p>$449.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="Ducati Desretx"
+       data-description="Brand : Hot Wheels
+       Toy vehicle form : Motorcycle
+       Material : Metal
+       Colour : White
+       Model Name : Ducati Desertx HW Dirt
+       Country of Origin : Malaysia 
+       Recommended Age: 3 years and up
+       Hot Wheels : Cool bike! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="449.00"
+       data-image="hot wheel 24.jpg">View Details</button>
+      </div>
+
+       <!-- Product Card 25 -->
+       <div class="product-card">
+        <img src="hot wheel 25.jpg" alt="Orange Streak">
+        <h3>77 Pontiac Firebird</h3>
+        <p>$769.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="77 Pontiac Firebird"
+       data-description="Brand : Hot Wheels
+       Toy vehicle form : Car
+       Material : Metal
+       Colour : Black
+       Theme : Sport
+       Model Name : 77 Pontiac Firebird T/A Muscle Mania
+       Country of Origin : Malaysia  
+       Recommended Age : 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology. and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="769.00"
+       data-image="hot wheel 25.jpg">View Details</button>   
+      </div>
+
+       <!-- Product Card 26 -->
+       <div class="product-card">
+        <img src="hot wheel 26.jpg" alt="Orange Streak">
+        <h3>Formula E Gen 3</h3>
+        <p>$909.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="Formula E Gen 3"
+       data-description="Brand : Hot Wheels
+       Toy vehicle form : Car
+       Material : Metal
+       Colour : Black
+       Theme : Sport
+       Model Name : Formula E Gen 3 HW Race
+       Country of Origin : Malaysia 
+       Recommended Age : 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="909.00"
+       data-image="ot wheel 26.jpg">View Details</button>  
+      </div>
+
+       <!-- Product Card 27 -->
+       <div class="product-card">
+        <img src="hot wheel 27.jpg" alt="Orange Streak">
+        <h3>Honda CB750 Cafe</h3>
+        <p>$1,299.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">       
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="Honda CB750 Cafe"
+       data-description="Brand : Hot Wheels
+       Toy vehicle form : Motorcycle
+       Colour : Black
+       Theme : Sport
+       Model Name : Honda CB750 Cafe HW Moto
+       Country of Origin : Malaysia 
+       Recommended Age : 3 years and up
+       Hot Wheels : Cool bike! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="1,299.00"
+       data-image="hot wheel 27.jpg">View Details</button>   
+      </div>
+
+       <!-- Product Card 28 -->
+       <div class="product-card">
+        <img src="hot wheel 28.jpg" alt="Orange Streak">
+        <h3>87 Audi Quattro</h3>
+        <p>$599.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">       
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="87 Audi Quattro"
+       data-description="Brand : Hot Wheels
+       Toy vehicle form : Car
+       Material : Metal
+       Colour : Black
+       Theme : Sport
+       Model Name : Hot Wheels 87 Audi Quattro HW Turbo
+       Country of Origin : Malaysia 
+       Recommended Age : 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="599.00"
+       data-image="hot wheel 28.jpg">View Details</button>  
+      </div>
+
+
+       <!-- Product Card 29 -->
+       <div class="product-card">
+        <img src="hot wheel 29.jpg" alt="Orange Streak">
+        <h3>Mitsubishi Pajero </h3>
+        <p>$549.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">      
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="Heavy Hitcher"
+       data-description="Brand : Hot Wheels
+       Material : Metal
+       Colour : Orange
+       Model Name : Mitsubishi Pajero Evolition
+       Special FeaturePortable
+       Contents : Mitsubishi Pajero Evolition HW J Imports
+       Country of Origin : Malaysia
+       Recommended Age : 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="549.00"
+       data-image="hot wheel 29.jpg">View Details</button>  
+      </div>
+
+       <!-- Product Card 30 -->
+       <div class="product-card">
+        <img src="hot wheel 30.jpg" alt="Orange Streak">
+        <h3>HW Moto Ducati Desretx</h3>
+        <p>$920.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">     
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="HW Moto Ducati Desretx"
+       data-description="Brand : Hot Wheels
+       Toy vehicle form : Motorcycle
+       Material : Plastic
+       Colour : Yellow
+       Theme : Sport
+       Recommended Age : 3 years and up
+       Hot Wheels : Cool bike! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="920.00"
+       data-image="hot wheel 30.jpg">View Details</button>  
+      </div>
+
+       <!-- Product Card 31 -->
+       <div class="product-card">
+        <img src="hot wheel 31.jpg" alt="Orange Streak">
+        <h3>Chrysler Pacifica </h3>
+        <p>$349.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">      
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="Chrysler Pacifica"
+       data-description="Brand : Hot Wheels
+       Material : Metal
+       Colour : Grey
+       Theme : Sport
+       Model Name : Chrysler Pacifica HW Vans
+       Country of Origin : Malaysia. 
+       Recommended Age : 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="349.00"
+       data-image="hot wheel 31.jpg">View Details</button> 
+      </div>
+
+       <!-- Product Card 32 -->
+       <div class="product-card">
+        <img src="hot wheel 32.jpg" alt="Orange Streak">
+        <h3>Surfin School Bus</h3>
+        <p>$789.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">      
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="Surfin School Bus"
+       data-description="Brand : Hot Wheels
+       Toy vehicle form : Bus
+       Colour : Brown
+       Theme : Cartoon
+       Model Name : Surfin School-Bus
+       Country of Origin : Malaysia
+       Recommended Age : 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="789.00"
+       data-image="hot wheel 32.jpg">View Details</button> 
+      </div>
+
+       <!-- Product Card 33 -->
+       <div class="product-card">
+        <img src="hot wheel 33.jpg" alt="Orange Streak">
+        <h3>Bumblebee</h3>
+        <p>$865.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="Bumblebee"
+       data-description="Brand : Hot Wheels
+       Toy vehicle form : Car
+       Material : Metal
+       Colour : Yellow
+       Theme : Movie
+       Model Name : Bumblebee HW Screen Time
+       Country of Origin : Malaysia 
+       Recommended Age : 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift : Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="865.00"
+       data-image="hot wheel 33.jpg">View Details</button> 
+      </div>
+
+       <!-- Product Card 34 -->
+       <div class="product-card">
+        <img src="hot wheel 34.jpg" alt="Orange Streak">
+        <h3>Volswagen ID Buzz</h3>
+        <p>$465.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+       <button class="buy-now">Buy Now</button>
+       <button class="view-details" 
+       data-name="Volswagen ID Buzz"
+       data-description="Brand : Hot Wheels
+       Toy vehicle form : Car
+       Material : Metal
+       Colour : Orange
+       Theme : Sport
+       Model Name : Volkswagen ID Buzz HW Vans
+       Country of Origin: Malaysia
+       Recommended Age: 3 years and up
+       Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+       Perfect Gift: Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+       data-price="465.00"
+       data-image="hot wheel 34.jpg">View Details</button> 
+      </div>
+
+       <!-- Product Card 35 -->
+       <div class="product-card">
+        <img src="hot wheel 35.jpg" alt="Orange Streak">
+        <h3>GMC Hummer EV</h3>
+        <p>$778.00</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+        <button class="add-to-cart" >Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+        <button class="view-details" 
+        data-name="GMC Hummer EV"
+        data-description="Brand : Hot Wheels
+        Toy vehicle form : Car
+        Material : Metal
+        Colour : Purple
+        Model Name : GMC Hummer EV
+        Contents: Hot Wheels GMC Hummer EV HW Green Speed
+        Country of Origin: Malaysia
+        Recommended Age: 3 years and up 
+        Hot Wheels : Cool car! Unique Southern California look, fast moving wheels, with the latest technology and red line tires. Currently the best selling mini car in the world
+        Perfect Gift: Perfect as a birthday gift, Christmas gift, or anniversary gift for kindergarten or school entrance celebrations"
+        data-price="778.00"
+        data-image="hot wheel 35.jpg">View Details</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+       <nav>
+      <ul class="nav-links">
+        <li><a href="intex.html" target="_blank">Home</a></li>
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="contact.html" target="_blank">Contact</a></li>
+        <li><a href="terms & conditions.html" target="_blank">Terms & Conditions</a></li>
+        <li><a href="refund.html" target="_blank">Refunds</a></li>
+        <li><a href="shipping.html" target="_blank">Shipping Policy</a></li>
+      </ul>
+    </nav> 
+    <p>&copy; HOT WHEELS HEAVEN | All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
